@@ -1,0 +1,13 @@
+.#VS Code
+python -m venv nome_do_ambiente_virtual
+
+#desbloquear a politica no PowerShell (Admin)
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+#volta pro VS Code
+.\nome_do_ambiente_virtual\Scripts\Activate.ps1
+
+#aqui o ambiente virtual estará ativo
+
+#para desativar o ambiente virtual
+deactivate
