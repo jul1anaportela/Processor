@@ -66,7 +66,7 @@ class ParticipantesProcessor:
             return
 
         COLUNAS_DESEJADAS = [
-            "ID", "IDTemp", "nomeCompleto", "genero", "racaEtnia", "dataInscricaoTxt",
+            "ID", "nomeCompleto", "genero", "racaEtnia", "dataInscricaoTxt",
             "dataNascimentoTxt", "telefoneParticipante", "telParticipanteWhatsapp",
             "telParticipanteInternet", "statusDosEstudos", "escolaridadeTxt", "periodoEstudo",
             "escolaParticipante", "nomeResponsavel", "grauParentescoResponsavelPrincipal",
