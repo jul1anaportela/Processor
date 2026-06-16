@@ -5,20 +5,9 @@ Toda substituição de código por nome é lida de uma tabela de referência na 
 BD_sharepoint. Não há dicionário fixo no código: ao encontrar um ID, o script busca
 o nome correspondente na tabela indicada.
 
-IMPORTANTE SOBRE PASTAS:
-  Por padrão, o script procura os arquivos na MESMA pasta onde este .py está
-  (não importa de onde você executa o terminal). Então deixe, na mesma pasta:
-         <pasta deste script>/
-           projeto_manip_pandas.py
-           Cambalhotas_THE.xlsx
-           BD_sharepoint/
-             PU.xlsx, trimestre.xlsx, projetos.xlsx, fy.xlsx, turmas.xlsx, ...
-  Se preferir manter os dados em outro lugar, defina BASE_DIR com um caminho
-  absoluto (veja o comentário em BASE_DIR, mais abaixo).
-
 COMO USAR:
   1. pip install pandas openpyxl
-  2. python projeto_manip_pandas.py
+  2. python reporte_participantes.py
 """
 
 import os
@@ -26,7 +15,7 @@ import pandas as pd
 
 # ============================ CONFIGURAÇÃO ============================
 
-# Pasta-base onde estão Cambalhotas_THE.xlsx e a pasta BD_sharepoint.
+# Pasta-base onde estão [main]_participantesPUs_json.xlsx e a pasta BD_sharepoint.
 # Padrão: a mesma pasta deste arquivo .py (resolve o problema de "pasta atual").
 # Para apontar para outro lugar, troque pela linha de exemplo abaixo:
 #     BASE_DIR = r"C:\Users\JulianaPortela\Desktop\projeto_processor"
